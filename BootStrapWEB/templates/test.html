@@ -1,0 +1,58 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}Flasky{% endblock %}
+{% block scripts %}
+<script>
+function fun(){
+	alert("Downloading,Please Wait")
+}
+</script>
+{% endblock%}
+
+{% block navbar %}
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle"
+            data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Flasky</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+				<li><a href="https://www.baidu.com">Baidu</a></li>
+				<li><a href="test">Test</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="page-header">
+        <h1>Hello</h1>
+		<p>This is the testing page</p>
+    </div>
+	<div class="btn-group">
+		<form id="form1" method="post" action="/Download">
+			<button id="fat-btn" class="btn btn-primary" 
+			type="submit" onClick=fun()> Download</button>
+		</form>
+	</div>
+	<div id="picture">
+		<table border="1">
+		<tr>
+			<td><img src="{{url_for('static',filename='temp.png')}}" class="img-thumbnail"></td>
+			<td><img src="{{url_for('static',filename='temp.jpg')}}" class="img-thumbnail"></td>
+		</tr>
+		</table>
+	</div>
+</div>
+
+{% endblock %}

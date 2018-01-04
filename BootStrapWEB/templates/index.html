@@ -1,0 +1,50 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}Flasky{% endblock %}
+{% block scripts %}
+<script>
+function fun(){
+	alert("Uploading,Please Wait")
+	window.location.href="test"
+}
+</script>
+{% endblock%}
+
+{% block navbar %}
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle"
+            data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Flasky</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+				<li><a href="https://www.baidu.com">Baidu</a></li>
+				<li><a href="test">Test</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="page-header">
+        <h1>Hello</h1>
+		<p>This is the Main page</p>
+    </div>
+	<div class="btn-group">
+		<button id="fat-btn" class="btn btn-primary" 
+		type="button" onClick=fun()> Download</button>
+		<button type="submit" class="btn btn-primary">Button</button>
+	</div>
+</div>
+
+{% endblock %}
