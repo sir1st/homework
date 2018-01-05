@@ -7,6 +7,7 @@
 
 =======
 #这里是图片转码的关键性数据参数：
+new things: recopy 
 使用方法：python Project.py
 注意应该存在D:/upload这样一个文件夹`
 220列 243行
