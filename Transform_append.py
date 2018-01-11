@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from PIL import Image
+import Sjn
 import Tojpg
 
 codeLib = '''@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,"^`'. '''#生成字符画所需的字符集
@@ -28,7 +28,7 @@ def transform2(image_file):
 def transform(directory,filename):
     #print('transform')
     fp = open(directory+filename,'rb')
-    image_file = Image.open(fp)
+    image_file = Sjn.open(fp)
     image_file=image_file.resize((int(image_file.size[0]*1.1), int(image_file.size[1]*0.5)))#调整图片大小
     #print (u'Info:',image_file.size[0],' ',image_file.size[1],' ',count)
 
