@@ -32,3 +32,4 @@ def toJpg(directory,filename):
     #im.show()
     savedname='temp.jpg'
     im.save(directory+savedname)
+    print('txt字符串转换为jpg字符画成功')
