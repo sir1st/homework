@@ -28,7 +28,7 @@ def toJpg(directory,filename):
             dr.text((x, y), str.strip(), font=font, fill="#000000")
         y=y+19
     f.close()
-    im=im.resize((int(im.size[0]*0.3), int(im.size[1]*0.3)))#调整图片大小
+    im=im.resize((int(im.size[0]*0.3), int(im.size[1]*0.3)))
     #im.show()
     savedname='temp.jpg'
     im.save(directory+savedname)
