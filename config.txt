@@ -1,4 +1,9 @@
-﻿#这里是图片转码的关键性数据参数：
+﻿if you want run this project,just try this command:
+python Project.py
+
+Noticed:some libs you need to install first, otherwise you may meet something unexpected
+
+#这里是图片转码的关键性数据参数：
 220列 243行
 
 1300高 1450宽 
