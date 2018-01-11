@@ -2,11 +2,10 @@
 
 {% block title %}Flasky{% endblock %}
 {% block scripts %}
-<script type="text/javascript">
+<script>
 function fun(){
-	alert("Uploading,Please Wait")
-	window.location.href="test"
-} 
+	alert("Downloading,Please Wait")
+}
 </script>
 {% endblock%}
 
@@ -38,13 +37,13 @@ function fun(){
 <div class="container">
     <div class="page-header">
         <h1>Hello</h1>
-		<p>This is the Main page</p>
+		<p>This is the testing page</p>
     </div>
-	<form name="form1" method="post" enctype="multipart/form-data">
-		<input type="file" name="photo" class="file-loading">
-		<button id="fat-btn" class="btn btn-primary" 
-		type="submit" onClick=fun()> Upload</button>
-	</form>
+	<div class="btn-group">
+		<form id="form1" method="post" action="/download">
+			<button id="fat-btn" class="btn btn-primary" 
+			type="submit" onClick=fun()> Download</button>
+		</form>
+	</div>
 </div>
-
 {% endblock %}
