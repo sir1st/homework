@@ -25,7 +25,6 @@ def upload_file():
         file_url = photos.url(filename)
         Transform.transform(app.config['UPLOADED_PHOTOS_DEST']+'/',filename)
         file_url2 = photos.url('temp.jpg')
-        print('图片上传成功')
         return render_template('test.html')+'<br><img src=' + file_url + '>'+ '<br><img src=' + file_url2 + '>'
     return render_template('index.html')
     
@@ -35,7 +34,6 @@ def download():
         print('download txt')
         directory = app.config['UPLOADED_PHOTOS_DEST']
         filename='temp.txt'
-        print('txt字符串文件下载成功')
         return send_from_directory(directory,filename,as_attachment=True)
         
 if True:

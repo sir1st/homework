@@ -35,4 +35,3 @@ def transform(directory,filename):
     tmp.close()
     
     Tojpg.toJpg(directory,'temp.txt')
-    print('图片灰度映射为字符串成功')
