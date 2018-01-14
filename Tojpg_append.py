@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import os
-import Sjn
+import Sjn,bz_Font,Jsx_ImageDraw
 
 def getHeight(filename):
     height=0
@@ -17,8 +17,8 @@ def toJpg(directory,filename):
     #height=5.9090909*getHeight(filename)*3
     width=5.657*getWidth(directory+filename)*3
     im = Sjn.new("RGB", (int(width), int(height)), (255, 255, 255))
-    dr = ImageDraw.Draw(im)
-    font = ImageFont.truetype(os.path.join("fonts", "consola.ttf"), 30)
+    dr = Jsx_ImageDraw.Draw(im)
+    font = bz_Font.truetype(os.path.join("fonts", "consola.ttf"), 30)
     x=1
     y=1
     f=open(directory+filename)

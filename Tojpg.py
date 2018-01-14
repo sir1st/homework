@@ -2,6 +2,7 @@
 
 import os
 from PIL import Image, ImageFont, ImageDraw
+import Tojpg_append
 
 def getHeight(filename):
     height=0

@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from PIL import Image
 import Tojpg
+import Transform_append
 
 codeLib = '''@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,"^`'. '''
 count = len(codeLib)
